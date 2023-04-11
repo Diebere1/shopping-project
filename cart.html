@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />    
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+     <!-- Header Start  -->
+     <section class="navbar" id="header">
+        <div class="navbar-top">
+            <a href="Shopping.html" ><img src="img/images1.png" alt="" width="50%" ></a>
+
+            <div>
+                <ul id="navbar">
+                <li><a href="Shopping.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="shop-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a></li>
+                <i id="close" class="fa-sharp fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a>
+                <i id="bar" class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </div>
+    <!-- Hero Section  -->
+    <section id="shophero" class="about">
+        <h1>#YOUR CART</h1>
+        <p>Save more time with coupons & up to 50% off!</p>
+    </section>
+    </section>
+
+    <!-- TO CART  -->
+    <section id="cart" class="section-p1">
+        <div class="product-container">
+            <div class="product-header">
+                <h4 class="product-title">Remove</h4>
+                <h4 class="product-image">Image</h4>
+                <h4 class="product">Product</h4>
+                <h4 class="product-price">Price</h4>
+                <h4 class="product-quantity">Quantity</h4>
+                <h4 class="product-subtotal">Subtotal</h4>
+            </div>
+            <div class="products-body">
+            </div>
+        </div>  
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="btn">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal"> 
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Sub-total</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$320</strong></td>
+                </tr>
+            </table>
+            <button class="btn">Checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="section-p1" id="foot">
+        <div class="col">
+            <h4>CONTACT INFORMATION</h4>
+            <strong>Address:</strong>
+            <p>190 - 205 Imo Housing Estate Owerri, <br> Nigeria</p>
+
+            <strong>Phone:</strong>
+            <p>+123 (0) 7061126730</p>
+
+            <strong>Email:</strong>
+            <p>masarati-ladies20@outlook.com</p>
+
+            <strong>Work Days/Hours:</strong>
+            <p>Tipicaly 24 hours <br><br> <span class="open">Open now</span></p>
+        </div>
+
+        <div class="col">
+            <h4>MENU</h4>
+            <a href="#">About us</a>
+            <a href="#">My Account</a>
+            <a href="#">Order History</a>
+            <a href="#">Advanced Search</a>
+        </div>
+
+        <div class="col">
+            <h4>CUSTOMER SUPPORT</h4>
+            <a href="#">Frequent questions</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>LEGAL WARNING</h4>
+            <a href="#">Terms of use</a>
+            <a href="#">Conditions of contract</a>
+            <a href="#">Cookies Policy</a>
+        </div>
+
+        <div class="col">
+            <h4>FOLLOW US</h4>
+            <div class="icon">
+                <i class="fab fa-twitter tweet"></i>
+                <i class="fab fa-instagram insta"></i>
+                <i class="fa-brands fa-youtube you"></i>                    
+                <i class="fab fa-facebook-f face"></i>
+                <i class="fa-brands fa-linkedin-in link"></i>
+            </div>
+            <strong class="secure">SAFE & SECURE PAYMENT</strong>
+            <img src="img/pay1-removebg-preview.png" id="pym">
+        </div>
+    </footer>
+
+    <!-- Copyright Section  -->
+    <div class="copyright section-p1">
+        <p class="copy">© 2023 Your Company Incorporated. All rights reserved.</p>
+    </div>
+</body>
+
+<script src="home.js"></script>
+</html>
+
+<!-- 
+    // Cart page  
+let carts = document.querySelectorAll(' .add-to-cart');
+
+let product = [
+    {
+        id: 0,
+        img : 'img/blue.png',
+        name: 'Ladie s Fashion Hang-Top',
+        price: 100,
+        inCart: 0
+    },
+    {
+        id: 1,
+        img: 'img/show-back.png',
+        name: 'Show sexy back',
+        price: 100,
+        inCart: 0
+    },
+    {
+        id: 2,
+        name: 'Black Organza Strapless',
+        tag: 'gucci',
+        price: 130,
+        inCart: 0
+    },
+    {
+        id: 3,
+        name: 'show sexy back',
+        tag: 'show back glown',
+        price: 120,
+        inCart: 0
+    },
+]
+
+for (let i=0; i < carts.length; i++){
+    carts[i].addEventListener('click', () => {
+        alert('Your item has been added to your cart')
+        cartNumbers(product[i]);
+        totalCost(product[i]);
+    })
+}
+
+function cartNumbers(product) {
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    productNumbers = parseInt(productNumbers);
+
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector(' #shop-bag span').textContent = productNumbers + 1;
+        document.querySelector(' #mobile a span').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector(' #shop-bag  span').textContent = 1;
+        document.querySelector(' #mobile a  span').textContent = 1;
+    }
+    setItem(product)
+}
+
+function setItem (product) {
+    let cartItems = localStorage.getItem('ProductsInCart');
+    cartItems = JSON.parse (cartItems)
+
+    if (cartItems !== null) {
+        if(cartItems[product.id] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.id]: product
+            }
+        }
+        console.log(cartItems[product.id]);
+
+        cartItems[product.id].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartItems = {
+            [product.id]: product
+        }
+    }
+
+    localStorage.setItem('ProductsInCart', JSON.stringify 
+    (cartItems));
+}
+
+function totalCost(product) {
+    // console.log("The product price is", product.price)
+    let cartCost = localStorage.getItem('totalCost');
+
+    console.log('The totalCost price  is', cartCost);
+    console.log(typeof cartCost)
+
+    if (cartCost != null) {
+
+        cartCost = parseInt (cartCost);
+
+        localStorage.setItem('totalCost', cartCost +  product.price);
+    } else {
+        localStorage.setItem('totalCost', product.price)
+    }
+
+}
+
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers'); 
+
+    if (productNumbers) {
+        document.querySelector(' #shop-bag span').textContent = productNumbers;
+        document.querySelector(' #mobile a span').textContent = productNumbers;
+    }
+}
+
+var totalAmount;
+var totalInCart;
+
+function selectElementsForCart() {
+    const image = document.querySelector('img').src;
+    const id = tablefdc.id;
+    const name = document.querySelector('td').innerText;
+
+    return [image, id, name];
+  }
+
+function displayCart(){
+    let cartItems = localStorage.getItem('ProductsInCart');
+    cartItems = JSON.parse(cartItems)
+
+    let table = document.querySelector('tbody')
+    console.log(cartItems)
+    if (cartItems && table) {
+        table.innerHTML=  '';
+        Object.values(cartItems).map(item => {
+            table.innerHTML += `
+            <tbody id=${item.id}>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img
+                    src="${item.image}"
+                    alt="product 1"/></td>
+                    <td>${item.name}</td>
+                    <td>$${item.price}.00</td>
+                    <td><input type="number" value="${item.inCart}"></td>
+                    <td>$${item.inCart * item.price}.00</td>
+                </tr>
+            </tbody>`
+        });
+    }
+}
+
+onLoadCartNumbers();
+ displayCart();
+ selectElementsForCart();
+
+ -->

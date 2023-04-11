@@ -1,0 +1,100 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    margin: 0 5px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    width: 25%;
+}
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer  p{
+    font-size: 13px;
+    margin: 0 0 9px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .open{
+    background: #aeddec;
+    color: #BF0426;
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+footer .icon .tweet{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color:#fff;
+    border: 1px solid transparent;
+    line-height: 40px;
+    padding: 0 11px;
+    background-color: #264DB1;
+}
+footer .icon .face{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color:#fff;
+    border: 1px solid transparent;
+    line-height: 40px;
+    padding: 0 14px;
+    font-size: 16px;
+    background-color:  #405DE6;
+}
+footer .icon .insta{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color:#fff;
+    border: 1px solid transparent;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+    background-color:  #833AB4;
+}
+footer .icon .link{
+    background-color: #0072b1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color:#fff;
+    border: 1px solid transparent;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+}
+footer .icon .you{
+    background-color: #FF0000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    color:#fff;
+    border: 1px solid transparent;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+footer a:hover{
+    color: #405DE6;
+}
+footer .secure{
+    margin: 20px 0;
+}

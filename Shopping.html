@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />    
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Header Start  -->
+    <section class="navbar" id="header">
+        <div class="navbar-top">
+            <a href="Shopping.html" ><img src="img/images1.png" alt="" width="40%" ></a>
+
+            <div>
+                <ul id="navbar">
+                <li><a class="active" href="Shopping.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="shop-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a></li>
+                <i id="close" class="fa-sharp fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a>
+                <i id="bar" class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </div>
+        <!-- Hero Section  -->
+        <div id="hero">
+            <div class="overlay">
+                <div class="content">
+                    <h4>Trade-in-offer</h4>
+                    <h2>Super value deal</h2>
+                    <h1>On all products</h1>
+                    <p>Save more time with coupons & up to 50% off!</p>
+                    <button class="cta">
+                        <span>Shop now</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Feature Section -->
+    <section class="section-p1" id="feature">
+        <div class="fea-box">
+            <img src="img/LTL.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fea-box">
+            <img src="img/online.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fea-box">
+            <img src="img/save.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fea-box">
+            <img src="img/promotion.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fea-box">
+            <img src="img/sold.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fea-box">
+            <img src="img/save.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+    </section>
+
+    <!-- Product Section  -->
+    <section id="product1" class="section-p1">
+        <h1>Featured Product</h1>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='shop-product.html';">
+                <img src="img/gold.png" alt="" id="card-img">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 2.html';">
+                <img src="img/show-back.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 3.html';">
+                <img src="img/slim.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 4.html';">
+                <img src="img/class.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 5.html';">
+                <img src="img/blue-skite.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 6.html';">
+                <img src="img/gawn.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 7.html';">
+                <img src="img/sexy.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='shop product 8.html';">
+                <img src="img/rose.png" alt="">
+                <div class="des">
+                    <span>gucci</span>
+                    <h5>Black Organza Strapless</h5>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart add-to-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section  -->
+    <section id="banner" class="section-m1">
+        <h4>Repair Service</h4>
+        <h2>Up to <span> 70% off</span> - All gowrn, & Accessories</h2>
+        <button id="banner-btn">
+            <b>Explore more!</b>
+        </button>
+    </section>
+
+    <!-- Smaller banner Section  -->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4> Crazy deals</h4>
+            <h2> buy 1 get 1 free</h2>
+            <span> The best classic dress is on sale for the ladies</span>
+            <a class="btn" href="#">Learn more</a>
+        </div>
+        <div class="banner-box">
+            <h4> Spring/summer</h4>
+            <h2> upcomming season</h2>
+            <span> The best classic dress is on sale for the ladies</span>
+            <a class="btn" href="#">Collection</a>
+        </div>
+    </section>
+
+    <!-- Banner three Section  -->
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>SECTIONAL SALE</h2>
+            <h3>Winter collection -50% off</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>HANG TOPS</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>COLD COVER </h2>
+            <h3>Spring / Summer 2022</h3>
+        </div>
+    </section>
+
+    <!-- Newslatter Section -->
+    <section id="newslatter" class="section-p1" class="section-m1">
+        <div class="newslatter">
+            <h4>Subscribe for Newslatter </h4>
+            <p>Get E-mail update about our latest outfit and <span>get special offer.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" class="input" id="Email" name="Email" placeholder="Enter email address" autocomplete="off">
+            <button class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="section-p1" id="foot">
+        <div class="col">
+            <h4>CONTACT INFORMATION</h4>
+            <strong>Address:</strong>
+            <p>190 - 205 Imo Housing Estate Owerri, <br> Nigeria</p>
+
+            <strong>Phone:</strong>
+            <p>+123 (0) 7061126730</p>
+
+            <strong>Email:</strong>
+            <p>masarati-ladies20@outlook.com</p>
+
+            <strong>Work Days/Hours:</strong>
+            <p>Tipicaly 24 hours <br><br> <span class="open">Open now</span></p>
+        </div>
+
+        <div class="col">
+            <h4>MENU</h4>
+            <a href="#">About us</a>
+            <a href="#">My Account</a>
+            <a href="#">Order History</a>
+            <a href="#">Advanced Search</a>
+        </div>
+
+        <div class="col">
+            <h4>CUSTOMER SUPPORT</h4>
+            <a href="#">Frequent questions</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>LEGAL WARNING</h4>
+            <a href="#">Terms of use</a>
+            <a href="#">Conditions of contract</a>
+            <a href="#">Cookies Policy</a>
+        </div>
+
+        <div class="col">
+            <h4>FOLLOW US</h4>
+            <div class="icon">
+                <i class="fab fa-twitter tweet"></i>
+                <i class="fab fa-instagram insta"></i>
+                <i class="fa-brands fa-youtube you"></i>                    
+                <i class="fab fa-facebook-f face"></i>
+                <i class="fa-brands fa-linkedin-in link"></i>
+            </div>
+            <strong class="secure">SAFE & SECURE PAYMENT</strong>
+            <img src="img/pay1-removebg-preview.png" id="pym">
+        </div>
+    </footer>
+    
+    <!-- Copyright Section  -->
+    <div class="copyright section-p1">
+        <p class="copy">© 2023 Your Company Incorporated. All rights reserved.</p>
+    </div>
+
+    <script src="home.js"></script>
+    <script type="text/Javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('#header');
+            header.classList.toggle('sticky', window.scrollY 0);
+        })
+    </script>
+</body>
+</html>
